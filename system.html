@@ -1,28 +1,80 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>System</title>
-<style>
-    h1{
-        text-align: center;
-    }
-</style>
-</head>
-<body>
-<h1>System</h1>
-<pre>
-    {
-    telecom:
-    {
-    "system" :"phone"
-    "value":"(03) 5555 6473"
-    "use" :"work"
-    "ank" :"1"
-    }
-    }
-</pre>
-<p></p>
-<a href="">not yet</a>
-</body>
+
+    <head>
+        
+        <title>System</title>
+        
+        <style>
+            h1{
+                font-size: 50px;
+                text-align: center;
+                }
+                div{
+                    margin-left: 10%;
+                    margin-right: 10%;
+                    }
+                table{
+                    table-layout: fixed;
+                    width: 100%;
+                    margin-left: auto;
+                    margin-right: auto; 
+                    }
+                td{
+                    padding: 50px;
+                    }
+                li{
+                font-size: 30px; 
+                line-height: 40px;
+                    }
+                    
+                }
+        </style>
+    </head>
+    <body>
+        <br>
+        <h1>System</h1>
+        <div>
+            <table border='0'>
+                <tbody>
+                    <tr>
+                        <td style='padding-left: 30%;'>
+                            <li>system</li>
+                            <li>value</li>
+                            <li>use</li>
+                            <li>rank</li>
+                            <li>period</li>
+
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                </tbody>
+
+
+            </table> 
+        </div>
+        
+        
+        
+        
+        
+        <p>病人聯絡資訊。數值個數(0…-1)，可不提供，或記錄電話、手機號碼、email、社交軟體帳號(如 Line、WeChat、Facebook) 等多組聯絡資訊。telecom 可包含以下子欄位:system(通訊系統)、value(系統中對應之帳號或號碼)、use(此帳號或號碼之用途)、rank(聯絡資訊之優先使用次序)、Period(使用期限)，各欄位細部規格如下:
+        </p>
+        <pre>
+            {
+            telecom:
+            {
+            "system" :"phone"
+            "value":"(03) 5555 6473"
+            "use" :"work"
+            "ank" :"1"
+            }
+            }
+        </pre>
+        <p></p>
+        <a href="">not yet</a>
+    </body>
 </html>
 

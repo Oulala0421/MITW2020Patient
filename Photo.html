@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Photo</title>
+        <style>
+            h1{
+                    font-size: 70px;
+                    text-align: center;
+                    height: 50px;
+                }
+                h3{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 20px;
+                }
+                pre{
+                    font-size: 20px;
+                }
+                div{
+                    margin-left: 20%;
+                    margin-right: 20%;
+                    border-style: unset;
+
+                }
+                .url{
+                    margin-left: 33%;
+                    margin-right: 33%;
+                    /* border-style: unset; */
+                }
+                li{
+                    font-size: 30px;
+                }
+        </style>
+    </head>
+    <body>
+        <h1>Photo</h1>
+        <div>
+            <p>
+                病人相片。<br>1.數值個數(0-…n)，可不提供，或給定URL 或 base 64 編碼以包含相片或相片連結。<br>2.建議以 URL 連結方式取得相片。<br>3.相片可上傳到各式網頁多媒體雲端伺服器或以 FHIR media 規格上傳 FHIR server。
+
+
+            </p>
+            
+            <hr>
+
+            <p>
+                議題：
+                <br>相片及醫學影像上傳後，建議以上傳者的私鑰加密保護，以防範駭客或不良之雲端系統管理者竊取及濫用此隱私資料。使用者端需資料擁有者(上傳者)授權，並提供解密密鑰，以解讀加密資訊。
+
+            </p>
+
+            <hr>
+            <h3>格式如下:</h3>
+            
+            <pre>
+
+    {
+        telecom:
+            {
+                "photo":
+                    {
+                        "url": "https://i.ytimg.com/vi/oCDDUPAIy74/hqdefault.jpg"
+                    }
+            }
+    }
+            </pre>
+                
+                
+            </div>
+            <hr>
+        </div>
+    </body>
+</html>
+
